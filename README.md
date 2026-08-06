@@ -2,6 +2,12 @@
 
 A full-stack IoT and AI-powered air quality monitoring system that provides real-time environmental monitoring, pollution forecasting, and location-based health insights. The platform collects live sensor data, integrates external weather and air quality APIs, and uses machine learning techniques to predict future air quality trends.
 
+<p align="center">
+  <a href="https://haseeb35.github.io/Air-Quality-Management-System-/">
+    <img src="https://img.shields.io/badge/▶%20Live%20Preview-haseeb35.github.io-2ea44f?style=for-the-badge" alt="Live preview">
+  </a>
+</p>
+
 ## Features
 
 - Real-time air quality monitoring from IoT sensors
