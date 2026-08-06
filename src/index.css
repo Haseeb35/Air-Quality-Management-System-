@@ -1,0 +1,12 @@
+/* Ensure the html and body take up the full height */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+:root {
+  --bg: linear-gradient(180deg,#020d1f 0%,#041830 25%,#062545 50%,#0a3a6e 75%,#1a5599 100%);
+  --card: rgba(4,18,40,0.7);
+  --border: rgba(74,158,255,0.15);
+  --accent: #1e6fff;
+  --dot: #4a9eff;
+}
