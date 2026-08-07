@@ -8,6 +8,18 @@ A full-stack IoT and AI-powered air quality monitoring system that provides real
   </a>
 </p>
 
+## Try It Live
+
+Open the live preview and click **Demo Login** — no typing needed. It signs in instantly with the shared demo account:
+
+| Field | Value |
+|-------|-------|
+| Email | `demo@airsense.com` |
+| Password | `Demo@2026` |
+| Role | Admin (full dashboard) |
+
+You can also type these credentials into the Sign In form, or create your own account via **Sign Up**. Note: Google sign-in only works if the deployment domain is added under Firebase → Authentication → Settings → Authorized domains.
+
 ## Features
 
 - Real-time air quality monitoring from IoT sensors

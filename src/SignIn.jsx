@@ -14,7 +14,11 @@ const SignIn = () => {
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
   const [googleLoading, setGoogleLoading] = useState(false);
+  const [demoLoading, setDemoLoading] = useState(false);
   const canvasRef = useRef(null);
+
+  const DEMO_EMAIL = "demo@airsense.com";
+  const DEMO_PASSWORD = "Demo@2026";
 
   const navigate = useNavigate();
   const googleProvider = new GoogleAuthProvider();
@@ -153,6 +157,22 @@ const SignIn = () => {
       setError("Google sign-in failed. Please try again.");
     } finally {
       setGoogleLoading(false);
+    }
+  };
+
+  const handleDemoLogin = async () => {
+    setError("");
+    setDemoLoading(true);
+    setEmail(DEMO_EMAIL);
+    setPassword(DEMO_PASSWORD);
+    try {
+      const userCredential = await signInWithEmailAndPassword(auth, DEMO_EMAIL, DEMO_PASSWORD);
+      await redirectUserByRole(userCredential.user);
+    } catch (err) {
+      console.error(err);
+      setError("Demo login failed. Please try again later.");
+    } finally {
+      setDemoLoading(false);
     }
   };
 
@@ -304,6 +324,31 @@ const SignIn = () => {
             {loading ? "Signing In..." : "Sign In"}
           </button>
         </form>
+
+        <button
+          type="button"
+          onClick={handleDemoLogin}
+          disabled={demoLoading}
+          style={{
+            width: "100%", padding: "11px", background: "rgba(74,158,255,0.14)",
+            border: "0.5px solid rgba(74,158,255,0.4)", borderRadius: "9px",
+            color: "#7db8ff", fontSize: "13px", fontWeight: "500", fontFamily: "inherit",
+            cursor: "pointer", display: "flex", alignItems: "center",
+            justifyContent: "center", gap: "8px", marginBottom: "12px",
+            opacity: demoLoading ? 0.7 : 1,
+          }}
+        >
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+            <path
+              d="M12 17V9M9 12l3-3 3 3"
+              stroke="#7db8ff" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"
+            />
+          </svg>
+          {demoLoading ? "Signing in as Demo..." : "Demo Login"}
+        </button>
+        <div style={{ textAlign: "center", fontSize: "11px", color: "rgba(255,255,255,0.3)", marginBottom: "14px" }}>
+          one-click access · demo@airsense.com / Demo@2026
+        </div>
 
         <div style={{ display: "flex", alignItems: "center", gap: "10px", marginBottom: "12px" }}>
           <div style={{ flex: 1, height: "0.5px", background: "rgba(255,255,255,0.08)" }} />
