@@ -3,16 +3,17 @@ import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 import { getDatabase } from "firebase/database"; // 1. Import Database
 
-// REPLACE THIS WITH YOUR ACTUAL KEYS FROM FIREBASE CONSOLE
+// Config is injected at build time from environment variables
+// (see .env.example / GitHub Actions repository variables).
 export const firebaseConfig = {
-    apiKey: "AIzaSyA-WJ1-v6ZY72aaBcT4sAxsLyyDdi2aP6o",
-    authDomain: "air-quality-system-1a337.firebaseapp.com",
-    databaseURL: "https://air-quality-system-1a337-default-rtdb.firebaseio.com",
-    projectId: "air-quality-system-1a337",
-    storageBucket: "air-quality-system-1a337.firebasestorage.app",
-    messagingSenderId: "106550052084",
-    appId: "1:106550052084:web:1e1961b5bc41b14b034aa1",
-    measurementId: "G-3KVCWD26V2"
+    apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+    authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+    databaseURL: import.meta.env.VITE_FIREBASE_DATABASE_URL,
+    projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+    storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+    messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+    appId: import.meta.env.VITE_FIREBASE_APP_ID,
+    measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID,
 };
 
 const app = initializeApp(firebaseConfig);
