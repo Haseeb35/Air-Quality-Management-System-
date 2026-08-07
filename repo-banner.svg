@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#020d1f"/>
+      <stop offset="0.25" stop-color="#041830"/>
+      <stop offset="0.5" stop-color="#062545"/>
+      <stop offset="0.75" stop-color="#0a3a6e"/>
+      <stop offset="1" stop-color="#1a5599"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#1e6fff"/>
+      <stop offset="1" stop-color="#4a9eff"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.7" cy="0.3" r="0.8">
+      <stop offset="0" stop-color="#1e6fff" stop-opacity="0.25"/>
+      <stop offset="1" stop-color="#1e6fff" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="blur">
+      <feGaussianBlur stdDeviation="30"/>
+    </filter>
+  </defs>
+
+  <rect width="1280" height="640" fill="url(#bg)"/>
+  <rect width="1280" height="640" fill="url(#glow)"/>
+
+  <g fill="#ffffff" opacity="0.7">
+    <circle cx="90" cy="80" r="1.6"/><circle cx="180" cy="40" r="1.1"/>
+    <circle cx="300" cy="120" r="1.8"/><circle cx="420" cy="60" r="1.2"/>
+    <circle cx="560" cy="30" r="1.5"/><circle cx="700" cy="95" r="1.1"/>
+    <circle cx="820" cy="45" r="1.7"/><circle cx="950" cy="110" r="1.2"/>
+    <circle cx="1060" cy="55" r="1.4"/><circle cx="1180" cy="85" r="1.6"/>
+    <circle cx="150" cy="200" r="1.0"/><circle cx="640" cy="170" r="1.0"/>
+    <circle cx="1020" cy="200" r="1.1"/><circle cx="1150" cy="170" r="0.9"/>
+  </g>
+
+  <g opacity="0.5">
+    <circle cx="480" cy="420" r="3" fill="#4a9eff"/>
+    <circle cx="760" cy="380" r="2.4" fill="#4a9eff"/>
+    <circle cx="1040" cy="440" r="3.2" fill="#4a9eff"/>
+    <circle cx="300" cy="470" r="2.2" fill="#4a9eff"/>
+  </g>
+
+  <ellipse cx="640" cy="700" rx="760" ry="200" fill="#041830" opacity="0.9" filter="url(#blur)"/>
+  <path d="M-60 640 Q300 500 640 540 Q980 580 1340 480 L1340 640 L-60 640 Z"
+        fill="#0a2a55" opacity="0.85"/>
+  <path d="M-60 640 Q320 540 640 580 Q980 620 1340 540 L1340 640 L-60 640 Z"
+        fill="#041830" opacity="0.9"/>
+
+  <g transform="translate(90, 60)">
+    <g>
+      <rect x="0" y="0" width="58" height="58" rx="14" fill="#1e6fff"/>
+      <path d="M19 38C13.5 38 9 34 9 28.5C9 23.5 13 19.5 18 19C18.5 14.5 22.5 11 27 11C32.5 11 36.5 15 37.5 19.5C43 20 47 24 47 29C47 34 42.5 38 37 38Z"
+            fill="#ffffff" opacity="0.2"/>
+      <path d="M24 41L27.5 35L31 41L27.5 45Z" fill="#ffffff"/>
+    </g>
+    <text x="74" y="30" font-family="'Segoe UI', Arial, sans-serif" font-size="26" font-weight="600" fill="#ffffff">AirSense</text>
+    <text x="74" y="50" font-family="'Segoe UI', Arial, sans-serif" font-size="11" letter-spacing="2.5" fill="#4a9eff">AIR QUALITY SYSTEM</text>
+  </g>
+
+  <text x="90" y="280" font-family="'Segoe UI', Arial, sans-serif" font-size="62" font-weight="700" fill="#ffffff">
+    Air Quality
+  </text>
+  <text x="90" y="355" font-family="'Segoe UI', Arial, sans-serif" font-size="62" font-weight="700" fill="url(#accent)">
+    Management System
+  </text>
+  <text x="92" y="410" font-family="'Segoe UI', Arial, sans-serif" font-size="20" fill="rgba(255,255,255,0.6)">
+    Live IoT sensor data &#183; ML pollution forecasting &#183; health-aware maps
+  </text>
+
+  <g transform="translate(92, 455)">
+    <rect x="0" y="0" width="150" height="36" rx="18" fill="rgba(30,111,255,0.18)" stroke="rgba(74,158,255,0.45)"/>
+    <text x="75" y="23" font-family="'Segoe UI', Arial, sans-serif" font-size="13" fill="#7db8ff" text-anchor="middle">React 19</text>
+    <rect x="162" y="0" width="118" height="36" rx="18" fill="rgba(30,111,255,0.18)" stroke="rgba(74,158,255,0.45)"/>
+    <text x="221" y="23" font-family="'Segoe UI', Arial, sans-serif" font-size="13" fill="#7db8ff" text-anchor="middle">Vite 7</text>
+    <rect x="292" y="0" width="130" height="36" rx="18" fill="rgba(30,111,255,0.18)" stroke="rgba(74,158,255,0.45)"/>
+    <text x="357" y="23" font-family="'Segoe UI', Arial, sans-serif" font-size="13" fill="#7db8ff" text-anchor="middle">Firebase</text>
+    <rect x="434" y="0" width="118" height="36" rx="18" fill="rgba(30,111,255,0.18)" stroke="rgba(74,158,255,0.45)"/>
+    <text x="493" y="23" font-family="'Segoe UI', Arial, sans-serif" font-size="13" fill="#7db8ff" text-anchor="middle">Arduino</text>
+    <rect x="564" y="0" width="118" height="36" rx="18" fill="rgba(30,111,255,0.18)" stroke="rgba(74,158,255,0.45)"/>
+    <text x="623" y="23" font-family="'Segoe UI', Arial, sans-serif" font-size="13" fill="#7db8ff" text-anchor="middle">Python</text>
+    <rect x="694" y="0" width="90" height="36" rx="18" fill="rgba(30,111,255,0.18)" stroke="rgba(74,158,255,0.45)"/>
+    <text x="739" y="23" font-family="'Segoe UI', Arial, sans-serif" font-size="13" fill="#7db8ff" text-anchor="middle">ML</text>
+  </g>
+
+  <text x="90" y="600" font-family="'Segoe UI', Arial, sans-serif" font-size="13" fill="rgba(255,255,255,0.35)">
+    Real-time monitoring &#183; admin &amp; user dashboards &#183; history &amp; PDF reports &#183; Google Maps insights
+  </text>
+</svg>
