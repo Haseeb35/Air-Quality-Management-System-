@@ -133,4 +133,4 @@ src/
 
 ## 📜 License
 
-MIT © 2026
+MIT © 2026 Abdul Haseeb Dar — see [LICENSE](LICENSE).
